@@ -7,14 +7,39 @@
     <link rel="canonical" href="https://tailwindcomponents.com/component/tailwind-css-maintenance-page" itemprop="URL">
     
     <title>Pymed.io</title>
-            <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <link rel="stylesheet" href="tailwind.css">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+    />
+</head>
     </head>
 <body class="bg-gray-200">
 <div class="w-full h-screen flex flex-col items-center justify-between">
     <div class="xl:w-1/2 flex-1 flex flex-col items-center justify-center text-center px-4 lg:px-0">
         <p class="text-4xl font-bold text-gray-700 capitalize tracking-wide mt-8">WE WILL GO LIVE IN SEPTEMBER 2024!</p>
         <p class="text-xl text-gray-700 uppercase mt-4">sorry for this inconvenient</p>
+        <p class="text-xl text-gray-700 uppercase mt-4">Get to Know Us on the Social Channel</p>
+        <div class="py-10">
+        <!--Facebook Button -->
+
+          <button onclick="link('https://www.facebook.com/profile.php?id=61560588743862')"  id="facebook" class="bg-white  sticky duration-500 border-2 border-blue-600 fixed  w-12 transform hover:-translate-y-3   h-12 text-2xl rounded-full hover:bg-blue-600 hover:text-white text-blue-600 ">
+            <i class="fab fa-facebook-f"></i>
+        </button>
+
+         <!--Linkedin Button-->
+        <button  onclick="link('https://www.linkedin.com/company/102994434/admin/dashboard/')" id="linkedin" class="bg-white transform hover:-translate-y-3  border-2 w-12 h-12 rounded-full duration-500 text-blue-500 border-blue-500  hover:bg-blue-500 hover:text-white text-2xl">
+          <i class="fab fa-linkedin-in"></i>
+        </button>
+
+      </div>
     </div>
+
     <div class="w-full py-4 border-t border-gray-300">
         <div class="container mx-auto flex flex-col md:flex-row items-center justify-center text-gray-600 text-sm md:space-x-8 space-y-1 md:space-y-0">
             <span class="font-bold">You can contact us:</span>
@@ -28,19 +53,6 @@
         </div>
         
     </div>
-    <div class="grid grid-cols-4 gap-4">
-  <!--Facebook Button -->
-
-    <button onclick="link('https://www.facebook.com/profile.php?id=61560588743862')"  id="facebook" class="bg-white  sticky duration-500 border-2 border-blue-600 fixed  w-12 transform hover:-translate-y-3   h-12 text-2xl rounded-full hover:bg-blue-600 hover:text-white text-blue-600 ">
-      <i class="fab fa-facebook-f"></i>
-  </button>
-
-   <!--Linkedin Button-->
-  <button  onclick="link('https://www.linkedin.com/company/102994434/admin/dashboard/')" id="linkedin" class="bg-white transform hover:-translate-y-3  border-2 w-12 h-12 rounded-full duration-500 text-blue-500 border-blue-500  hover:bg-blue-500 hover:text-white text-2xl">
-    <i class="fab fa-linkedin-in"></i>
-  </button>
-
-</div>
 </div>
     <script>
     function  link(link) {
